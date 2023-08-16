@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav{
+            height: 70px;
+            width: 100vw;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+             position: fixed; 
+        }
+        .nav ul{
+                list-style: none;
+                display: flex;
+        }
+        .nav ul li{
+              margin: 10px;
+              font-size: 25px;
+        }
+      .top-section{
+          width: 100vw;
+          height: 100vh;
+          background-image: url(asset/image.jpg);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+           margin-top: 70px;
+      }  
+      .top-section button{
+             height: 70px;
+             width: 150px;
+             color: gray;
+             background-color: transparent;
+             border: 1px solid gray;
+             border-radius: 10px;
+             padding: 10px;
+             /* margin-top: 25px; */
+      } 
+      .top-section button:hover{
+         color: white;
+         background-color: #3DC9B3;
+         border: 1px solid white;
+      }
+     .about{
+         height: 80vh;
+         width: 80vw;
+         
+         display: grid;
+         grid-template-rows: 1fr 7fr;
+     }
+     .top{
+      
+        display: flex;
+        justify-content: center;
+     }
+     
+     .desc{
+        padding-left: 20px;
+        margin-left: 30px;
+       
+        display: grid;
+        grid-template-columns: 2fr 6fr;
+     }
+      .img{
+       
+        display: flex;
+        align-items: center;
+        
+     }
+      .info{
+       
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding: 10px;
+        padding-left: 35px;
+        
+     }
+     .project{
+        border: 1px solid black;
+        width: 100vw;
+        height: 80vh;
+        display: grid;
+       
+        grid-template-rows: 1fr 7fr ;
+     }
+     .project_names{
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        justify-content: center;
+     }
+     .names{
+        
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+     }
+     .contact_me{
+        border: 1px solid black;
+        height: 80vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+     }
+     .resume{
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .email{
+        border: 1px solid black;
+         display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .c{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     }
+     .inner-resume{
+        height: 80%;
+        width: 80%;
+         border: 1px solid black;
+          display: flex;
+          flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     }
+
+    </style>
+</head>
+<body>
+      <div class="parent">
+        <div class="nav">
+            <h1 style="margin-left: 20px; color: white;">Ritvik Soni</h1>
+            <ul style="margin-right: 20px; color: white;">
+                <li>About</li>
+                <li>Project</li>
+                <li>More</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="top-section">
+        
+            <h1 style="color: white;">Hi, i'm Ritvik Soni</h1>
+            <p style="color: white; padding: 25px;">I am a computer science student learnimg design and development.</p>
+            <button>See My Work</button>
+        </div>
+        
+        <div class="about">
+            <div class="top">
+                <h1>About Me</h1>
+            </div>
+            <div class="desc">
+                <div class="img">
+                    <img src="asset/image.jpg" alt="" height="50%" width="100%" style="border-radius: 48%;">
+                </div>
+                <div class="info">
+                    <p style="font-size: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatem a ex
+                        ut beatae voluptas fugit voluptatum voluptate exercitationem hic dolore commodi inventore animi mollitia
+                        labore ea et, iure quod iusto. Eos blanditiis ipsum aliquam dignissimos qui sapiente perspiciatis
+                        facilis earum hic voluptas nobis deserunt iure harum est expedita quis accusamus cumque eius debitis
+                        optio officiis, laboriosam aut. Facilis, rem? Molestiae quo sit, ratione maiores, aut voluptates cum
+                        rerum tenetur dolor nemo impedit pariatur a suscipit eligendi in! Aperiam quas reiciendis veniam quos
+                        sed nobis aliquid voluptatibus ad nihil, nam commodi odit quam, facere nesciunt officia voluptates
+                        possimus enim! Voluptas. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere repellendus
+                        maiores quibusdam unde quod architecto velit sapiente nihil quis, sint, voluptatem tempore dolorem vero
+                        exercitationem facilis enim quia quas rem. Vitae laboriosam voluptas alias odit perferendis facere.
+                        Voluptates quae minus asperiores dolorum excepturi cum eum iure! Debitis porro ullam dolores. Vero quasi
+                        cumque corrupti debitis iusto eveniet, nemo fuga libero ad! Eos laborum vel doloribus qui nesciunt quasi
+                        quaerat ex, rem, nulla porro blanditiis officia. Voluptatum dolorum quae doloribus autem. Cum suscipit
+                        voluptatum fugit, vitae rerum earum consequuntur sequi non qui placeat nesciunt, ea illo. Perspiciatis
+                        pariatur deserunt voluptate fugit!</p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <h1 style="display: flex; justify-content: center;">Project</h1>
+            <div class="project_names">
+                <div class="names"><img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_CPP.jpg" alt="" height="60%" width="100%">
+                <h1>Performance monitoring tool using PMU</h1>
+                <h3>Kernel Programming</h3>
+                <p>Linux Kernel Programming | Perf | PMU</p>
+               </div>
+                <div class="names"><img src="https://miro.medium.com/v2/resize:fit:1400/1*LyZcwuLWv2FArOumCxobpA.png" alt="" height="60%" width="100%">
+                <h1>Performance monitoring tool using PMU</h1>
+                <h3>Kernel Programming</h3>
+                <p>Linux Kernel Programming | Perf | PMU</p>
+            </div>
+                <div class="names"><img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/HeroHomepage_2880x1200.jpg" alt="" height="60%" width="100%">
+                <h1>Performance monitoring tool using PMU</h1>
+                <h3>Kernel Programming</h3>
+                <p>Linux Kernel Programming | Perf | PMU</p>
+            </div>
+            </div>
+        </div>
+        <div class="contact_me">
+            <h1 style="display: flex; justify-content: center;">contact me</h1>
+            <div class="c">
+                <div class="resume">
+                         <div class="inner-resume">
+                                    <p style="font-size: 2em;">Resume</p>
+                                    <p style="margin-bottom: 20px;"><a href="">Download</a></p>
+                         </div>
+                </div>
+                <div class="email">
+                         <div class="inner-resume">
+                                <p style="margin-bottom: 20px; font-size: 2em;">Email</p>
+                                <p><a href="">ritviksoni1@gmail.com</a></p>
+                         </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

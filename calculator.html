@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        body{
+            /* background-color: skyblue; */
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 75vh;
+            width: 35vw;
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+
+        }
+        .row{
+                    border: 1px solid black;
+        }
+        #f_row{
+            border: 1px solid black;
+           
+        }
+          #s_row{
+            border: 1px solid black;
+             display: grid;
+              grid-template-columns: 2fr 1fr 1fr;
+        }
+        .ttf_row{
+              
+            display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+          #l_row{
+            border: 1px solid black;
+             display: grid;
+              grid-template-columns: 1fr 1fr 2fr;
+          }
+          input{
+            font-size: xx-large
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="row" id="f_row">
+           <input type="text" style="width: 100%; height: 100%;" id="dis">
+       </div>
+       <div class="row" id="s_row">
+        <input type="button" value="AC" onclick="allClear()">
+        <input type="button" value="DEL" onclick="lastDelete()">
+        <input type="button" value="/" onclick="appendValue('/')">
+       </div>
+       <div class="row ttf_row">
+            <input type="button" value="1" onclick="appendValue('1')">
+            <input type="button" value="2" onclick="appendValue('2')">
+            <input type="button" value="3"onclick="appendValue('3')">
+            <input type="button" value="*"onclick="appendValue('*')">
+       </div>
+       <div class="row ttf_row">
+        <input type="button" value="4" onclick="appendValue('4')">
+        <input type="button" value="5"onclick="appendValue('5')">
+        <input type="button" value="6"onclick="appendValue('6')">
+        <input type="button" value="+"onclick="appendValue('+')">
+       </div>
+       <div class="row ttf_row">
+        <input type="button" value="7"onclick="appendValue('7')">
+        <input type="button" value="8"onclick="appendValue('8')">
+        <input type="button" value="9"onclick="appendValue('9')">
+        <input type="button" value="-"onclick="appendValue('-')">
+       </div>
+       <div class="row" id="l_row">
+        <input type="button" value="."onclick="appendValue('.')">
+        <input type="button" value="0"onclick="appendValue('0')">
+        <input type="button" value="=" onclick="answer()">
+       </div>
+
+    </div>
+    
+    <script>
+        function appendValue(value)
+        {
+               document.getElementById("dis").value+=value;
+        }
+         function allClear() {
+                document.getElementById("dis").value =''
+            }
+            function lastDelete()
+            {
+                 document.getElementById("dis").value = document.getElementById("dis").value.toString().slice(0,-1);
+            }
+            function answer()
+            {
+                try {
+                    document.getElementById("dis").value = eval(document.getElementById("dis").value);
+
+                } catch (error) {
+                       document.getElementById("dis").value="Error"
+                }
+            }
+    </script>
+    
+</body>
+</html>
