@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    let a=(n)=>{
+    //     if(n%2==0){
+    //         console.log("even")
+    //     }
+    //     else{
+    //         console.log("odd")
+    //     }
+
+    //    }
+    //   a(56)
+    //   a(77)
+      
+      // array
+
+    //   let a=[10,20,30,40,50]
+    //   for(let i=0; i<a.length; i++)
+    //   {
+    //     console.log(a[i])
+    //   }
+
+    // let a=[10,20,30,40,50]
+    // let s=0
+    // for(let i=0;i<a.length;i++)
+    // {
+    //     s+=a[i]
+    // }
+
+
+
+//     let a = [10, 20, 30, 40, 50]
+//     for(let i of a){
+//         console.log(i)
+//     }
+
+
+//     for(let i in a){
+//         console.log(i)
+//     }
+
+//     a.forEach(function(item){
+//         console.log(item)
+//     }
+//     )
+
+//    a.forEach((item)=>){
+//     console.log(item)
+//    }
+            
+
+
+//let a=[10,20,30,40,50,80,90]
+//push value at last
+// a.push("ritvik")
+// console.log(a)//10,20,30,40,50,ritvik
+
+// //pop delete from last
+// a.pop()
+// console.log(a)//10,20,30,40,50
+
+// a.unshift("ritvik")//ritvik,10,20,30,40,50
+// a.shift()//10,20,30,40,50
+// console.log(a)
+
+// x=a.pop()
+// y=a.shift()
+// a.unshift(x)
+// a.push(y)
+// console.log(a)
+
+//slice function slice (start ,end+1)
+// console.log(a.slice(2,5))
+// console.log(a.slice(4,-1))
+// console.log(a.slice(3,4))
+
+//splice splice(x,n,y)go on xth indexing deleting n elemnt & replace xth indexing by y
+
+// a.splice(1,1,"raj")
+// console.log(a)
+// a.splice(2,1,"soni")
+// console.log(a)
+
+
+
+//  let b = [10, 20, 30, 40, 50, 80, 90]
+// b.splice(0,3)
+// console.log(b)
+// b.splice(3,4)
+// console.log(b)
+    
+
+// let a=[900,20,30,40,50,80,90]
+// let b=a.map(function(item){
+//     return item*2
+// })
+// console.log(b)
+
+
+
+
+
+// let a=[70,75,45,60,78,20,33,77,80]
+// let b=a.map((item)=>{
+//     if(item>50){
+//         return "pass"
+//     }
+//     else{
+//         return "fail"
+//     }
+// })
+// console.log(b)
+
+
+//filter
+
+
+
+    // let a = [70, 75, 45, 60, 78, 20, 33, 77, 80]
+    // let c=a.filter((item)=>{
+    //     return item>50
+    // })
+    // console.log(c)
+
+
+     let a = [70, 75, 45, 60, 78, 20, 33, 77, 80]
+     let c=a.reduce((a,b)=>{
+        return a+b;
+     })
+     console.log(c)
+
+
+
+
+</script> 
+
+    
+</body>
+</html>
