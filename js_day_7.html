@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container">
+    <input id="text" type="text" placeholder="enter your friend name">
+    <button id="add" onclick="addtoarray()">add to array</button>
+    <button id="print" onclick="printname()">print name </button>
+     </div>
+     <div id="t"></div>
+    <script>
+   
+    // let obj =[
+    //     {
+    //     id:1,
+    //     name:"raj",
+    //     course:"btech",
+    //     branch:"CSE",
+    //     age:18
+    //     },
+    //     {
+    //         id: 2,
+    //         name: "anuj",
+    //         course: "kya hi malum",
+    //         branch: "ni pata",
+    //         age:15
+    //     },
+    //      {
+    //         id: 3,
+    //         name: "arpit",
+    //         course: "ssc",
+    //         branch: "malum ni",
+    //         age:19
+    //     } ,
+    //     {
+    //         id: 4,
+    //         name: "lokesh",
+    //         course: "btech",
+    //         branch: "CSE",
+    //         age:20
+    //     },
+    //        {
+    //         id: 5,
+    //         name: "ritik",
+    //         course: "btech",
+    //         branch: "CSE",
+    //         age: 21
+    //     },
+    //        {
+    //         id: 6,
+    //         name: "nishu",
+    //         course: "btech",
+    //         branch: "CSE",
+    //         age: 12
+    //     },
+    //        {
+    //         id: 7,
+    //         name: "gaurav",
+    //         course: "btech",
+    //         branch: "CSE",
+    //         age: 17
+    //     },
+    //        {
+    //         id: 8,
+    //         name: "pinku",
+    //         course: "btech",
+    //         branch: "CSE",
+    //         age: 22
+    //     },
+    //        {
+    //         id: 9,
+    //         name: "nikhil",
+    //         course: "btech",
+    //         branch: "CSE",
+    //         age: 23
+    //     },
+    //        {
+    //         id: 10,
+    //         name: "abhay",
+    //         course: "btech",
+    //         branch: "CSE",
+    //         age: 11
+    //     },
+    //]
+    // for(let i=0;i<obj.length;i++ ){
+    //     console.log(obj[i].name)
+    // }
+
+
+    // let c=obj.filter((item)=>{
+    //     if(item.age>18){
+    //         return item.age
+    //     }
+        
+    // })
+    // console.log(c)
+
+
+   let a=[];
+    function addtoarray(){
+        a.push(document.getElementById("text").value)
+
+    }
+    let i=0
+    function printname(){
+        let c=setInterval(function(){
+            document.getElementById("t").innerHTML+=a[i]
+            i++
+            if(i>=a.length)
+            {
+                clearInterval(c)
+            }
+        },1000)
+    } 
+
+    </script>
+    
+</body>
+</html>
